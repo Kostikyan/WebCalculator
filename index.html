@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <a style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=100088204985992"><p class="Authors" > Authors: <b >ChatGPT & Vahe)</b></p></a>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="result" readonly>
+            <div class="button-row">
+                <button onclick="appendToResult('7')">7</button>
+                <button onclick="appendToResult('8')">8</button>
+                <button onclick="appendToResult('9')">9</button>
+                <button onclick="performOperation('/')">/</button>
+            </div>
+            <div class="button-row">
+                <button onclick="appendToResult('4')">4</button>
+                <button onclick="appendToResult('5')">5</button>
+                <button onclick="appendToResult('6')">6</button>
+                <button onclick="performOperation('*')">*</button>
+            </div>
+            <div class="button-row">
+                <button onclick="appendToResult('1')">1</button>
+                <button onclick="appendToResult('2')">2</button>
+                <button onclick="appendToResult('3')">3</button>
+                <button onclick="performOperation('-')">-</button>
+            </div>
+            <div class="button-row">
+                <button onclick="appendToResult('0')">0</button>
+                <button onclick="appendToResult('.')">.</button>
+                <button onclick="performOperation('+')">+</button>
+                <button onclick="calculate()">=</button>
+            </div>
+            <div class="rowButton" >        
+            <button class="CButton" onclick="clearResult()">C</button>
+            </div>
+        </div>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
